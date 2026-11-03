@@ -2,7 +2,7 @@
 
 **A small, dependency-free security-header checker for websites you own or are authorized to assess.**
 
-Header Scout requests one URL from your computer, checks the response for nine common browser security headers, and explains what to review. It does not crawl pages, submit forms, follow redirects, or send cookies, passwords, or API tokens.
+Header Scout requests one URL from your computer, checks the response for nine common browser security headers, and explains what to review. It does not crawl pages, submit forms, follow redirects, or attach cookies, passwords, or API tokens. Any query string in the URL you provide is still sent as part of that request.
 
 ## Quick start
 
