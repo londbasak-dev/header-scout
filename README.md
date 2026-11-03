@@ -61,6 +61,7 @@ Summary: 5 present/review, 4 missing
 
 - Check only sites you own or have permission to assess.
 - The request runs from your computer and is limited to the supplied URL. Redirects are reported instead of followed, so you can review the destination before checking it separately.
+- The report shows only the target origin; URL paths and query strings are omitted from output.
 - Header presence is not a complete security assessment. A missing header is a prompt to review, not proof of a vulnerability; an unsuitable policy can also break a site.
 - Header Scout checks one response only. It does not crawl, test application behavior, inspect TLS configuration, or verify the policies' effectiveness.
 - The HTTP response body is not saved. The tool reads at most 1 KiB before closing the response.
