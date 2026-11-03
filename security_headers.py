@@ -106,7 +106,10 @@ def fetch(url: str, timeout: float):
     with response:
         # Read only a small amount so the tool can inspect response headers without downloading a full page.
         response.read(1024)
-        return response.status, response.headers
+        status_code = getattr(response, "status", None)
+        if status_code is None:
+            status_code = response.code
+        return status_code, response.headers
 
 
 def report(url: str, timeout: float) -> dict[str, object]:
